@@ -19,6 +19,9 @@ body{
     color: #FFFFFF;
     background-color: black;
 }
+#bars-icon{
+    display: none;
+}
 .header-bg{
     background-color: rgba(17, 17, 17, 1);
 }
@@ -88,6 +91,7 @@ color: white;
     font-size: 4.875rem;
     font-weight: 900;
     margin-bottom: 0;
+    line-height: 1.2;
 }
 .banner{
     align-items: normal;
@@ -130,8 +134,9 @@ color: white;
     margin-top: 70px;
 }
 .your-habit-deatils{
-
-    margin-top: 100px;
+    
+padding: 0 200px 0 200px;
+    margin-top: 200px;
 }
 section{
     margin-top: 100px;
@@ -292,13 +297,18 @@ select{
 
 /* respomsive meadia styles */
 @media screen and (max-width: 576px){ 
+    header{
+        padding: 0 10px;
+    }
    .banner, 
    .run-extra-container,
    .started-container,
    .bmi-calculator-containers{
     flex-direction: column;
     justify-content: center;
-    
+   }
+   #bars-icon{
+    display: inline-block;
    }
    .nav-elements{
     display: none;
@@ -309,6 +319,10 @@ select{
     }
     .run-extra-image{
         margin-top: 20px;
+    }
+    .your-habit-deatils{
+        padding: 0;
+        margin-top: 400px;
     }
     .video-turotial-second{
         /* margin-top: -300px; */
